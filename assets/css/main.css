@@ -143,12 +143,14 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  --background-color: #f2f2f2;
-  color: var(--default-color);
-  background-color: var(--background-color);
+  
   padding: 10px 0;
   transition: all 0.5s;
   z-index: 997;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  -webkit-backdrop-filter: blur(10px); /* for Safari */
+  backdrop-filter: blur(10px);         /* for modern browsers */
+  color: white;
 }
 
 .header .logo {
