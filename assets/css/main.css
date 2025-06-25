@@ -164,15 +164,16 @@ h6 {
   font-size: 30px;
   margin: 0;
   font-weight: 500;
-  color: var(--heading-color);
+  color: #fff;
 }
 
 .header .header-social-links {
   padding-right: 15px;
+  color: #fff;
 }
 
 .header .header-social-links a {
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  color: #fff;
   padding-left: 6px;
   display: inline-block;
   transition: 0.3s;
@@ -220,11 +221,12 @@ h6 {
 
   .navmenu li {
     position: relative;
+    color: #fff;
   }
 
   .navmenu a,
   .navmenu a:focus {
-    color: var(--nav-color);
+    color: #fff;
     padding: 18px 15px;
     font-size: 14px;
     font-family: var(--nav-font);
