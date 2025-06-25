@@ -253,7 +253,7 @@ h6 {
   .navmenu li:hover>a,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-hover-color);
+    color: #EDC001;
   }
 
   .navmenu .dropdown ul {
@@ -316,7 +316,7 @@ h6 {
 /* Navmenu - Mobile */
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
-    color: var(--nav-color);
+    color: #fff;
     font-size: 28px;
     line-height: 0;
     margin-right: 10px;
