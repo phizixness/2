@@ -144,14 +144,11 @@ h6 {
 --------------------------------------------------------------*/
 .header {
   --background-color: #f2f2f2;
-  color: #fff;
+  color: var(--default-color);
+  background-color: var(--background-color);
   padding: 10px 0;
   transition: all 0.5s;
   z-index: 997;
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px); /* Safari support */  
-  background-color: rgba(0, 0, 0, 0.8);
-  }
 }
 
 .header .logo {
@@ -167,16 +164,15 @@ h6 {
   font-size: 30px;
   margin: 0;
   font-weight: 500;
-  color: #fff;
+  color: var(--heading-color);
 }
 
 .header .header-social-links {
   padding-right: 15px;
-  color: #fff;
 }
 
 .header .header-social-links a {
-  color: #fff;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
   padding-left: 6px;
   display: inline-block;
   transition: 0.3s;
@@ -224,12 +220,11 @@ h6 {
 
   .navmenu li {
     position: relative;
-    color: #fff;
   }
 
   .navmenu a,
   .navmenu a:focus {
-    color: #fff;
+    color: var(--nav-color);
     padding: 18px 15px;
     font-size: 14px;
     font-family: var(--nav-font);
@@ -256,7 +251,7 @@ h6 {
   .navmenu li:hover>a,
   .navmenu .active,
   .navmenu .active:focus {
-    color: #EDC001;
+    color: var(--nav-hover-color);
   }
 
   .navmenu .dropdown ul {
@@ -319,7 +314,7 @@ h6 {
 /* Navmenu - Mobile */
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
-    color: #fff;
+    color: var(--nav-color);
     font-size: 28px;
     line-height: 0;
     margin-right: 10px;
